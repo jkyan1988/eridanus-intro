@@ -22,3 +22,13 @@ for (let i = 0; i < skills.length; i++) {
     skill.innerText = skills[i]
     skillsList.appendChild(skill)
 }
+
+const messageForm = document.querySelector('leave_message')
+
+messageForm.addEventListener('submit', (e) => {
+    const name = e.target.name
+    const email = e.target.email
+    const message = e.target.message
+    console.log(name, email, message)
+
+});
